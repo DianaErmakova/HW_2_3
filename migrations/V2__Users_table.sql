@@ -1,0 +1,12 @@
+DROP TABLE UsersHW5;
+CREATE TABLE users(
+	UserID SERIAL PRIMARY KEY,
+	Surname VARCHAR(30) NOT NULL, 
+	UserName VARCHAR(30) NOT NULL, 
+	Patronymic VARCHAR(30), 
+	Birthday DATE,
+	Profession VARCHAR(30), 
+	Nationality VARCHAR(100), 
+	PhoneNumber VARCHAR(20) NOT NULL, 
+	Email VARCHAR(50) UNIQUE NOT NULL   
+);
